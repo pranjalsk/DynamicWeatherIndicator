@@ -1,0 +1,35 @@
+<h3>Weather Application</h3>
+<table border='1' id='table-weather' style="text-align: center;padding: 5px;border: 1px solid black;">
+    <tbody>
+        <tr>
+            <th>Cityname</th>
+            <th>Timestamp (yyyy:mm:dd:hh:mm:ss)</th>
+            <th>Temperature in &deg;C</th>
+            <th>Humidity in %</th>
+            <th>WindSpeed in MPH</th>
+            <th>Coudiness in %</th>
+        </tr>
+        <tr id="london-data">
+          <td>{{londonWeather.cityName}}</td>
+          <td>{{londonWeather.timeStamp}}</td>
+          <td>{{londonWeather.temp}}</td>
+          <td>{{londonWeather.humidity}}</td>
+          <td>{{londonWeather.windSpeed}}</td>
+          <td>{{londonWeather.cloudiness}}</td>
+        </tr>
+        <tr id="london-data-placeholder"></tr>
+        <tr id="phx-data">
+          <td>{{phoenixWeather.cityName}}</td>
+          <td>{{phoenixWeather.timeStamp}}</td>
+          <td>{{phoenixWeather.temp}}</td>
+          <td>{{phoenixWeather.humidity}}</td>
+          <td>{{phoenixWeather.windSpeed}}</td>
+          <td>{{phoenixWeather.cloudiness}}</td>
+        </tr>
+        <tr id="phx-data-placeholder"></tr>
+        <tr id="city-data" #citydata1>
+        </tr>
+        <tr id="city-data-placeholder"></tr>
+    </tbody>
+</table>
+<app-city-menu></app-city-menu>
