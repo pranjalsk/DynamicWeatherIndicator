@@ -1,31 +1,24 @@
 # SER421lab5
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+This application addresses following problem statement:
+An example is given here:  http://api.openweathermap.org/data/2.5/weather?q=London,uk
+1.	Displays a list of 3 cities and their associated data. The data should be retrieved and parsed out of the JSON at URLs like the above via an AJAX call. The data you should display in a table:
+a.	A city name and 2-letter country code. Examples: London,UK and Phoenix,US
+b.	A timestamp when the data was last updated.
+c.	Temperature in Celsius
+d.	Humidity – a percentage. Example: 70 means “70% humidity”
+e.	Wind speed – miles per hour 
+f.	Cloudiness – a percentage. Example: 10 means “10% cloudy”
+When initially loaded, the application should initialize the rows for 2 of the 3 cities, London, UK and Phoenix, US. The 3rd city may be any city and is described next.
+2.	The 3rd city should be populated by selecting from a set of 5 cities in a dropdown. You may populate the dropdown with any 5 cities you like. When a new city is selected, you should populate its data in the 3rd row.
+3.	At the bottom of the page, display the following lines based on dynamic calculations of retrived information:
+a.	“The average temperature is AAA and the hottest city is TTT”
+b.	“The average humidity is BBB and the most humid city is HHH”
+c.	“The city with the nicest weather is XXX”
+d.	“The city with the worst weather is YYY”
+
+
 
 ## Development server
+Run `npm install` to install all the dependencies.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
